@@ -1,0 +1,141 @@
+#card{
+    width: 25%;
+    height: 500px;
+    overflow: hidden;
+    top: 50%;
+    bottom: 50%;
+    margin:0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 40px;
+    
+    position: relative;
+    
+}  
+.immagine  {
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+
+}   
+#card:hover::before {
+    content: '';
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.161);
+}
+.save{
+    position:absolute;
+    color:white;
+    background-color: red;
+    border-radius:70px;
+    top:-100px;
+    right:20px;
+    padding:20px;
+    font-size: large;
+    opacity:0;
+    transition:all 1s linear;
+    border:none;
+} 
+
+#card:hover .save {
+    top:20px;
+    opacity:1;
+    transition: all 1s linear;
+
+} 
+#link {
+    position:absolute;
+    opacity:0;
+    width:150px;
+    height: 60px;;
+    border-radius: 30px;
+    transition:all 1s linear;
+    bottom:-100px;
+    left:20px;
+    border:none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+   
+}    
+#card:hover #link {
+    opacity:1;
+    bottom:25px;
+    transition:all 1s linear;
+
+  
+}    
+#scarica {
+
+    position:absolute;
+    opacity:0;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    transition:all 1s linear;
+    bottom:-100px;
+    right:100px;
+    border:none;
+    
+    
+    
+    
+    
+} 
+#card:hover #scarica  {
+    opacity:1;
+    bottom:25px;
+    transition:all 1s linear;
+   
+
+}   
+#more {
+    position:absolute;
+    opacity:0;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    transition:all 1s linear;
+    bottom:-100px;
+    right:20px;
+    border:none;
+    
+    
+    
+}    
+#card:hover #more {
+    opacity:1;
+    bottom:25px;
+    transition:all 1s linear;
+  
+
+} 
+
+.download {
+   
+    transform: scale(2.0);
+    padding-top:2px;
+    display: inline-block;
+    
+}   
+.ellisse{
+    display:inline-block;
+   
+    transform: scale(2.0);
+    
+} 
+.freccia {
+    display: inline-block;
+    transform: scale(2.0);
+    padding-left:5px;
+}
+span {
+    font-size: large;
+    padding-left:15px;
+
+
+}
